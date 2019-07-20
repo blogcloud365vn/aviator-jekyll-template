@@ -23,6 +23,12 @@ collections:
   auth:
     title: AUTH
     position: 3
+  server:
+    title: SERVER
+    position: 4
+  user:
+    title: USER
+    position: 5
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

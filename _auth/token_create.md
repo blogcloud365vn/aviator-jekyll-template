@@ -13,17 +13,7 @@ content_markdown: |-
   {: .success}
 
   Thêm token mới
-# left_code_blocks:
-#   - code_block: |-
-#       $.post("http://192.168.70.65/api/v1/auth/tokens", {
-#         "token": "YOUR_APP_KEY",
-#         "title": "The Book Thief",
-#         "score": 4.3
-#       }, function(data) {
-#         alert(data);
-#       });
-#     title: jQuery
-#     language: javascript
+
 right_code_blocks:
   - code_block: |-
         {
@@ -32,8 +22,8 @@ right_code_blocks:
           "expired": 0,
           "project_id": "string"
         }
-      title: Request
-      language: json
+    title: Request
+    language: json
   - code_block: |-
       {
         "message": string,

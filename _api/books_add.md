@@ -1,53 +1,44 @@
 ---
-title: /books
-position: 3.1
+title: /book
+position: 1.1
 type: post
-description: Create new token
+description: Create Book
 parameters:
-  - name: email
-    content: Email login Portal
-  - name: password
-    content: Password user login Portal
+  - name: title
+    content: The title for the book
+  - name: score
+    content: The book's score between 0 and 5
 content_markdown: |-
-  Token sử dụng cho việc xác thực với Portal
+  The book will automatically be added to your reading list
   {: .success}
 
-  Thêm token mới
-# left_code_blocks:
-#   - code_block: |-
-#       $.post("http://192.168.70.65/api/v1/auth/tokens", {
-#         "token": "YOUR_APP_KEY",
-#         "title": "The Book Thief",
-#         "score": 4.3
-#       }, function(data) {
-#         alert(data);
-#       });
-#     title: jQuery
-#     language: javascript
+  Adds a book to your collection.
+left_code_blocks:
+  - code_block: |-
+      $.post("http://api.myapp.com/books/", {
+        "token": "YOUR_APP_KEY",
+        "title": "The Book Thief",
+        "score": 4.3
+      }, function(data) {
+        alert(data);
+      });
+    title: jQuery
+    language: javascript
 right_code_blocks:
   - code_block: |-
-        {
-          "email": "string",
-          "password": "string",
-          "expired": 0,
-          "project_id": "string"
-        }
-      title: Request
-      language: json
-  - code_block: |-
       {
-        "message": string,
-        "token": "string",
+        "id": 3,
+        "title": "The Book Thief",
+        "score": 4.3,
+        "dateAdded": "5/1/2015"
       }
     title: Response
     language: json
   - code_block: |-
       {
         "error": true,
-        "message": "string"
+        "message": "Invalid score"
       }
     title: Error
     language: json
 ---
-
-

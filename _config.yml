@@ -20,6 +20,9 @@ collections:
   api:
     title: APIs
     position: 2
+  auth:
+    title: AUTH
+    position: 3
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

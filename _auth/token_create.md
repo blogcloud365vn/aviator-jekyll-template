@@ -2,7 +2,7 @@
 title: Token Create
 position: 1.1
 type: post
-description: Create new token
+description: /api/v1/auth/tokens
 parameters:
   - name: email
     content: Email sử dụng để đăng nhập portal
@@ -10,10 +10,6 @@ parameters:
     content: Password sử dụng để đăng nhập portal
   - name: expired
     content: Thời gian tồn tại của token (tính bằng giờ)
-content_markdown: |-
-  /api/v1/auth/tokens
-  {: .success}
-
 left_code_blocks:
   - code_block: |-
       $.post("/api/v1/auth/tokens", {

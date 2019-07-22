@@ -2,12 +2,12 @@
 title: Server Console
 position: 2.4
 type: get
-description: /server/{instance_id}/console/
+description: /api/v1/server/{instance_id}/console/
 
 left_code_blocks:
   - code_block: |-
       $.ajax({
-        url: '/server/{instance_id}/console/',
+        url: '/api/v1/server/{instance_id}/console/',
         headers: {
             'Authorization':'Token $TOKEN',
         },
@@ -19,7 +19,7 @@ left_code_blocks:
     title: jQuery
     language: javascript
   - code_block: |-
-      r = requests.get("/server/{instance_id}/console/", token="YOUR_TOKEN_KEY")
+      r = requests.get("/api/v1/server/{instance_id}/console/", token="YOUR_TOKEN_KEY")
       print r.text
     title: Python
     language: python

@@ -2,14 +2,14 @@
 title: Server Rename
 position: 2.9
 type: post
-description: /server/{instance_id}/rename/
+description: /api/v1/server/{instance_id}/rename/
 parameters:
   - name: server_name
-    content: Tên máy chủ ảo muốn thay đổi
+    content: Tên server
 left_code_blocks:
   - code_block: |-
       $.ajax({
-        url: '/server/{instance_id}/rename/',
+        url: '/api/v1/server/{instance_id}/rename/',
         headers: {
             'Authorization':'Token $TOKEN',
         },
@@ -25,7 +25,7 @@ left_code_blocks:
     title: jQuery
     language: javascript
   - code_block: |-
-      url = /server/{instance_id}/rename/
+      url = /api/v1/server/{instance_id}/rename/
       headers = {"Authorization":"Bearer " + "YOUR_TOKEN_KEY","Content-Type":"application/json"}
       data = {
         'server_name': "string"

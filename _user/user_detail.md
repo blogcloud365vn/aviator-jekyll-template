@@ -2,11 +2,11 @@
 title: User Detail
 position: 3.1
 type: get
-description: /user/detail_user/
+description: /api/v1/user/detail_user/
 left_code_blocks:
   - code_block: |-
       $.ajax({
-        url: '/user/detail_user/',
+        url: '/api/v1/user/detail_user/',
         headers: {
           'Authorization':'Token $TOKEN',
         },
@@ -18,7 +18,7 @@ left_code_blocks:
     title: jQuery
     language: javascript
   - code_block: |-
-      r = requests.get("/user/detail_user/", token="YOUR_TOKEN_KEY")
+      r = requests.get("/api/v1/user/detail_user/", token="YOUR_TOKEN_KEY")
       print r.text
     title: Python
     language: python

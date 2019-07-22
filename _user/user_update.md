@@ -2,7 +2,7 @@
 title: User Update
 position: 3.2
 type: patch
-description: /user/update_profile/
+description: /api/v1/user/update_profile/
 parameters:
   - name: first_name
     content: Họ và tên đệm
@@ -19,7 +19,7 @@ parameters:
 left_code_blocks:
   - code_block: |-
       $.ajax({
-        url: '/user/update_profile/',
+        url: '/api/v1/user/update_profile/',
         headers: {
             'Authorization':'Token $TOKEN',
         },
@@ -40,7 +40,7 @@ left_code_blocks:
     title: jQuery
     language: javascript
   - code_block: |-
-      url = /user/update_profile/
+      url = /api/v1/user/update_profile/
       headers = {"Authorization":"Bearer " + "YOUR_TOKEN_KEY","Content-Type":"application/json"}
       data = {
         'first_name': "string",

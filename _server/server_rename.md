@@ -26,7 +26,7 @@ left_code_blocks:
     language: javascript
   - code_block: |-
       url = /server/{instance_id}/rename/
-      headers = {"Authorization":"Bearer " + $TOKEN,"Content-Type":"application/json"}
+      headers = {"Authorization":"Bearer " + "YOUR_TOKEN_KEY","Content-Type":"application/json"}
       data = {
         'server_name': "string"
       }

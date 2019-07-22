@@ -2,14 +2,22 @@
 title: Token Delete
 position: 1.3
 type: delete
-description: Xóa token hiện tại
-content_markdown: |-
-  API sử dụng để xóa token đang sử dụng
-  | -
-  Đường dẫn: /api/v1/auth/tokens
+description: /api/v1/auth/tokens
+
 left_code_blocks:
   - code_block: |-
-      r = requests.delete("http://portalurl/api/v1/auth/tokens", token="YOUR_TOKEN_KEY")
+      $.ajax({
+        url: '/api/v1/auth/tokens',
+        headers: {
+            'Authorization':'Token $token',
+        },
+        type: 'DELETE',
+          success: function(result) {}
+      });
+    title: jQuery
+    language: javascript
+  - code_block: |-
+      r = requests.delete("/api/v1/auth/tokens", token="YOUR_TOKEN_KEY")
       print r.text
     title: Python
     language: python

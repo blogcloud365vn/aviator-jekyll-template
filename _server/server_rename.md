@@ -1,11 +1,39 @@
 ---
-title: /server/{instance_id}/rename/
+title: Server Rename
 position: 2.9
 type: post
-description: Đổi tên máy chủ ảo
+description: /server/{instance_id}/rename/
 parameters:
   - name: server_name
     content: Tên máy chủ ảo muốn thay đổi
+left_code_blocks:
+  - code_block: |-
+      $.ajax({
+        url: '/server/{instance_id}/rename/',
+        headers: {
+            'Authorization':'Token $TOKEN',
+        },
+        data: {
+          'server_name': "string"
+        }
+        method: 'POST',
+        dataType: 'json',
+        success: function(data){
+          console.log(data);
+        }
+      });
+    title: jQuery
+    language: javascript
+  - code_block: |-
+      url = /server/{instance_id}/rename/
+      headers = {"Authorization":"Bearer " + $TOKEN,"Content-Type":"application/json"}
+      data = {
+        'server_name': "string"
+      }
+      r = requests.post(url, headers = headers, data = data);
+      print r.text
+    title: Python
+    language: python
 right_code_blocks:
   - code_block: |-
         {

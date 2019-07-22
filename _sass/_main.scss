@@ -242,6 +242,20 @@ h3 .endpoint {
 	}
 }
 
+.endpoint.post {
+	color: #42A5F5;
+	&:after {
+		content: "POST";
+	}
+}
+
+.endpoint.patch {
+	color: #E09D43;
+	&:after {
+		content: "PATCH";
+	}
+}
+
 .main {
 	margin: 0 0 0 $nav-width;
 	border-left: 1px solid #eee;

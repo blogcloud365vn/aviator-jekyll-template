@@ -29,7 +29,7 @@ left_code_blocks:
     language: javascript
   - code_block: |-
       url = /api/v1/server/{instance_id}/change_password/
-      headers = {"Authorization":"Bearer " + $TOKEN,"Content-Type":"application/json"}
+      headers = {"Authorization":"Bearer " + "YOUR_TOKEN_KEY","Content-Type":"application/json"}
       data = {
         'password': "string",
         're_password': "string"

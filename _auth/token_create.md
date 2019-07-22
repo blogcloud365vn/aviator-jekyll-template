@@ -1,13 +1,15 @@
 ---
-title: /books
+title: /auth
 position: 3.1
 type: post
 description: Create new token
 parameters:
   - name: email
-    content: Email login Portal
+    content: Email sử dụng để đăng nhập portal
   - name: password
-    content: Password user login Portal
+    content: Password sử dụng để đăng nhập portal
+  - name: expired
+    content: Thời gian tồn tại của token (tính bằng giờ)
 content_markdown: |-
   Token sử dụng cho việc xác thực với Portal
   {: .success}
@@ -26,7 +28,7 @@ right_code_blocks:
     language: json
   - code_block: |-
       {
-        "message": string,
+        "message": "string",
         "token": "string",
       }
     title: Response

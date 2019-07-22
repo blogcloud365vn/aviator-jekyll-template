@@ -1,6 +1,6 @@
 ---
-title: /server
-position: 4.11
+title: /server/{instance_id}/rebuild/
+position: 2.10
 type: post
 description: Thay đổi hệ điều hành của máy chủ ảo
 parameters:

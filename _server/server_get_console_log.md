@@ -1,6 +1,6 @@
 ---
-title: /server
-position: 4.5
+title: /api/v1/server/{instance_id}/get_console_log/
+position: 2.5
 type: get
 description: Lấy thông tin console log
 left_code_blocks:

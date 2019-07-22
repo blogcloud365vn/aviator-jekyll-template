@@ -1,6 +1,6 @@
 ---
 title: /user
-position: 5.3
+position: 3.3
 type: post
 description: Thay đổi mật khẩu truy cập của user
 parameters:

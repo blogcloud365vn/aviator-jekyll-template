@@ -1,7 +1,7 @@
 ---
-title: /auth
-position: 3.3
-type: del
+title: /api/v1/auth/tokens
+position: 1.3
+type: delete
 description: Xóa token hiện tại
 content_markdown: |-
   API sử dụng để xóa token đang sử dụng

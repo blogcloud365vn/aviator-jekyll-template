@@ -1,6 +1,6 @@
 ---
-title: /auth
-position: 3.2
+title: /api/v1/auth/tokens
+position: 1.2
 type: get
 description: Hiển thị thông tin chi tiết của token
 content_markdown: |-

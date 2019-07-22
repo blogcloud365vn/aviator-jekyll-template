@@ -1,6 +1,6 @@
 ---
-title: /server
-position: 4.7
+title: /server/{instance_id}/reboot/
+position: 2.6
 type: post
 description: Khởi động lại máy chủ ảo
 left_code_blocks:

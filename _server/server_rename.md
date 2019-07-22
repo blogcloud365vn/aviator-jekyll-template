@@ -1,6 +1,6 @@
 ---
-title: /server
-position: 4.10
+title: /server/{instance_id}/rename/
+position: 2.9
 type: post
 description: Đổi tên máy chủ ảo
 parameters:

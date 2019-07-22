@@ -13,22 +13,15 @@ baseurl:
 
 timezone: Etc/UTC
 
-collections:
-  documentation:
-    title: Documentation
-    position: 1
-  api:
-    title: APIs
-    position: 2
-  auth:
-    title: AUTH
-    position: 3
-  server:
-    title: SERVER
-    position: 4
-  user:
-    title: USER
-    position: 5
+auth:
+  title: AUTH
+  position: 1
+server:
+  title: SERVER
+  position: 2
+user:
+  title: USER
+  position: 3
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

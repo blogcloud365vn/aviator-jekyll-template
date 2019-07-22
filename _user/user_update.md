@@ -1,6 +1,6 @@
 ---
 title: /user
-position: 5.2
+position: 3.2
 type: patch
 description: Cập nhật thông tin cá nhân của user
 parameters:

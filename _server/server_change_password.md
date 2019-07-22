@@ -19,8 +19,8 @@ left_code_blocks:
         }
         r = requests.post(url, headers = headers, data = data);
         print r.text
-    title: Python
-    language: python
+    title: jQuery
+    language: javascript
   - code_block: |-
       $.ajax({
         url: '/api/v1/server/{instance_id}/change_password/',
@@ -37,8 +37,8 @@ left_code_blocks:
           console.log(data);
         }
       });
-    title: jQuery
-    language: javascript
+    title: Python
+    language: python
 right_code_blocks:
   - code_block: |-
         {

@@ -2,11 +2,11 @@
 title: Server Stop
 position: 2.8
 type: post
-description: /server/{instance_id}/stop/
+description: /api/v1/server/{instance_id}/stop/
 left_code_blocks:
   - code_block: |-
       $.ajax({
-        url: '/server/{instance_id}/stop/',
+        url: '/api/v1/server/{instance_id}/stop/',
         headers: {
             'Authorization':'Token $TOKEN',
         },
@@ -19,7 +19,7 @@ left_code_blocks:
     title: jQuery
     language: javascript
   - code_block: |-
-      r = requests.get("/server/{instance_id}/stop/", token="YOUR_TOKEN_KEY")
+      r = requests.get("/api/v1/server/{instance_id}/stop/", token="YOUR_TOKEN_KEY")
       print r.text
     title: Python
     language: python

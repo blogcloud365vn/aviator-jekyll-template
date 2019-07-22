@@ -2,14 +2,14 @@
 title: Server Rebuild
 position: 2.10
 type: post
-description: /server/{instance_id}/rebuild/
+description: /api/v1/server/{instance_id}/rebuild/
 parameters:
   - name: os_image
     content: ID của hệ điều hành muốn thay đổi
 left_code_blocks:
   - code_block: |-
       $.ajax({
-        url: '/server/{instance_id}/rebuild/',
+        url: '/api/v1/server/{instance_id}/rebuild/',
         headers: {
             'Authorization':'Token $TOKEN',
         },
@@ -25,7 +25,7 @@ left_code_blocks:
     title: jQuery
     language: javascript
   - code_block: |-
-      url = /server/{instance_id}/rebuild/
+      url = /api/v1/server/{instance_id}/rebuild/
       headers = {"Authorization":"Bearer " + "YOUR_TOKEN_KEY","Content-Type":"application/json"}
       data = {
         'os_image': 0

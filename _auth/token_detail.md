@@ -2,13 +2,30 @@
 title: Token Detail
 position: 1.2
 type: get
-description: Hiển thị thông tin chi tiết của token
-content_markdown: |-
-  API sử dụng để  hiển thị các thông tin đến token
-  /api/v1/auth/tokens
+description: /api/v1/auth/tokens
+
 left_code_blocks:
   - code_block: |-
-      r = requests.get("http://portalurl/api/v1/auth/tokens", token="YOUR_TOKEN_KEY")
+      $.ajax({
+        url: '/api/v1/auth/tokens',
+        headers: {
+            'Authorization':'Token $token',
+        },
+        method: 'POST',
+        dataType: 'json',
+        data: {
+          "name": "string",
+          "ram": 0,
+          "vcpus": 0
+        },
+        success: function(data){
+          console.log(data);
+        }
+      });
+    title: jQuery
+    language: javascript
+  - code_block: |-
+      r = requests.get("/api/v1/auth/tokens", token="YOUR_TOKEN_KEY")
       print r.text
     title: Python
     language: python

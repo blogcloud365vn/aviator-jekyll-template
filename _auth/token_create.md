@@ -1,5 +1,5 @@
 ---
-title: /api/v1/auth/tokens
+title: Token Create
 position: 1.1
 type: post
 description: Create new token
@@ -12,6 +12,7 @@ parameters:
     content: Thời gian tồn tại của token (tính bằng giờ)
 content_markdown: |-
   Token sử dụng cho việc xác thực với Portal
+  /api/v1/auth/tokens
   {: .success}
 
   Thêm token mới

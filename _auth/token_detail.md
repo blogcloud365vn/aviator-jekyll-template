@@ -1,10 +1,11 @@
 ---
-title: /api/v1/auth/tokens
+title: Token Detail
 position: 1.2
 type: get
 description: Hiển thị thông tin chi tiết của token
 content_markdown: |-
   API sử dụng để  hiển thị các thông tin đến token
+  /api/v1/auth/tokens
 left_code_blocks:
   - code_block: |-
       r = requests.get("http://portalurl/api/v1/auth/tokens", token="YOUR_TOKEN_KEY")

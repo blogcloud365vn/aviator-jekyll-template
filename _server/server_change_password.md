@@ -11,18 +11,6 @@ parameters:
 left_code_blocks:
   - code_block: |-
       $.ajax({
-        url = /api/v1/server/{instance_id}/change_password/
-        headers = {"Authorization":"Bearer " + $TOKEN,"Content-Type":"application/json"}
-        data = {
-          'password': "string",
-          're_password': "string"
-        }
-        r = requests.post(url, headers = headers, data = data);
-        print r.text
-    title: jQuery
-    language: javascript
-  - code_block: |-
-      $.ajax({
         url: '/api/v1/server/{instance_id}/change_password/',
         headers: {
             'Authorization':'Token $TOKEN',
@@ -37,6 +25,17 @@ left_code_blocks:
           console.log(data);
         }
       });
+    title: jQuery
+    language: javascript
+  - code_block: |-
+      url = /api/v1/server/{instance_id}/change_password/
+      headers = {"Authorization":"Bearer " + $TOKEN,"Content-Type":"application/json"}
+      data = {
+        'password': "string",
+        're_password': "string"
+      }
+      r = requests.post(url, headers = headers, data = data);
+      print r.text
     title: Python
     language: python
 right_code_blocks:

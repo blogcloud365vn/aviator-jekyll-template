@@ -1,11 +1,25 @@
 ---
-title: /server/{instance_id}/stop/
+title: Server Stop
 position: 2.8
 type: post
-description: Tắt máy chủ ảo
+description: /server/{instance_id}/stop/
 left_code_blocks:
   - code_block: |-
-      r = requests.get("http://portalurl/api/v1/server/{instance_id}/stop/", token="YOUR_TOKEN_KEY")
+      $.ajax({
+        url: '/server/{instance_id}/stop/',
+        headers: {
+            'Authorization':'Token $TOKEN',
+        },
+        method: 'POST',
+        dataType: 'json',
+        success: function(data){
+          console.log(data);
+        }
+      });
+    title: jQuery
+    language: javascript
+  - code_block: |-
+      r = requests.get("/server/{instance_id}/stop/", token="YOUR_TOKEN_KEY")
       print r.text
     title: Python
     language: python

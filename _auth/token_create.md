@@ -11,11 +11,25 @@ parameters:
   - name: expired
     content: Thời gian tồn tại của token (tính bằng giờ)
 content_markdown: |-
-  Token sử dụng cho việc xác thực với Portal
   /api/v1/auth/tokens
   {: .success}
 
-  Thêm token mới
+left_code_blocks:
+  - code_block: |-
+      $.post("/api/v1/auth/tokens", {
+        "email": "user@example.com",
+        "password": "string"
+      }, function(data) {
+        console.log(data);
+      });
+    title: jQuery
+    language: javascript
+  - code_block: |-
+      data = { 'username' : 'user@example.com', 'password' : 'string' }
+      r = requests.post('/api/v1/auth/tokens', data=json.dumps(data), verify=False)
+      token = json.loads(r.text)
+    title: Python
+    language: python
 
 right_code_blocks:
   - code_block: |-

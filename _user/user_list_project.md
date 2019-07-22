@@ -1,11 +1,24 @@
 ---
-title: /user
+title: User List Project
 position: 3.4
 type: get
-description: Hiển thị thông tin cá nhân của user
+description: /user/list_project/
 left_code_blocks:
   - code_block: |-
-      r = requests.get("http://portalurl/api/v1/user/list_project/", token="YOUR_TOKEN_KEY")
+      $.ajax({
+        url: '/user/list_project/',
+        headers: {
+          'Authorization':'Token $TOKEN',
+        },
+        method: 'GET',
+        success: function(data){
+          console.log(data);
+        }
+      });
+    title: jQuery
+    language: javascript
+  - code_block: |-
+      r = requests.get("/user/list_project/", token="YOUR_TOKEN_KEY")
       print r.text
     title: Python
     language: python

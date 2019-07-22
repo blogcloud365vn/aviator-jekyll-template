@@ -5,7 +5,7 @@ type: get
 description: /api/v1/server/{instance_id}/
 
 left_code_blocks:
-    - code_block: |-
+  - code_block: |-
       $.ajax({
         url: '/api/v1/server/{instance_id}/',
         headers: {

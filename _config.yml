@@ -12,6 +12,7 @@ baseurl:
 # Build
 
 timezone: Etc/UTC
+
 collections:
   auth:
     title: AUTH
@@ -22,9 +23,9 @@ collections:
   user:
     title: USER
     position: 3
-  plugins:
-    - jekyll-sitemap
-    - jekyll-seo-tag
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 exclude:
   - readme.md

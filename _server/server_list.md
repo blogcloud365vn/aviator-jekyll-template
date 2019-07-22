@@ -7,7 +7,7 @@ description: /api/v1/server/
 left_code_blocks:
   - code_block: |-
       $.ajax({
-        url: 'http://localhost:8000/api/v1/accounts/',
+        url: '/api/v1/server/',
         headers: {
             'Authorization':'Token $TOKEN',
         },

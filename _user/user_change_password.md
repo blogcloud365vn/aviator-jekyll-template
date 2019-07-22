@@ -2,7 +2,7 @@
 title: User Change Password
 position: 3.3
 type: post
-description: /user/change_password/
+description: /api/v1/user/change_password/
 parameters:
   - name: old_password
     content: Mật khẩu cũ
@@ -13,7 +13,7 @@ parameters:
 left_code_blocks:
   - code_block: |-
       $.ajax({
-        url: '/user/change_password/',
+        url: '/api/v1/user/change_password/',
         headers: {
             'Authorization':'Token $TOKEN',
         },
@@ -31,7 +31,7 @@ left_code_blocks:
     title: jQuery
     language: javascript
   - code_block: |-
-      url = /user/change_password/
+      url = /api/v1/user/change_password/
       headers = {"Authorization":"Bearer " + "YOUR_TOKEN_KEY","Content-Type":"application/json"}
       data = {
         'old_password': "string",

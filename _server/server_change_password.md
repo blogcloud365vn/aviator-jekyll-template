@@ -18,9 +18,9 @@ left_code_blocks:
           're_password': "string"
         }
         r = requests.post(url, headers = headers, data = data);
-        print r.content
-    title: jQuery
-    language: javascript
+        print r.text
+    title: Python
+    language: python
   - code_block: |-
       $.ajax({
         url: '/api/v1/server/{instance_id}/change_password/',

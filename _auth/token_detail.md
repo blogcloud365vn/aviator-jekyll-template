@@ -9,15 +9,9 @@ left_code_blocks:
       $.ajax({
         url: '/api/v1/auth/tokens',
         headers: {
-            'Authorization':'Token $token',
+            'Authorization':'Token $TOKEN',
         },
-        method: 'POST',
-        dataType: 'json',
-        data: {
-          "name": "string",
-          "ram": 0,
-          "vcpus": 0
-        },
+        method: 'GET',
         success: function(data){
           console.log(data);
         }

@@ -9,7 +9,7 @@ left_code_blocks:
       $.ajax({
         url: '/api/v1/auth/tokens',
         headers: {
-            'Authorization':'Token $token',
+            'Authorization':'Token $TOKEN',
         },
         type: 'DELETE',
           success: function(result) {}

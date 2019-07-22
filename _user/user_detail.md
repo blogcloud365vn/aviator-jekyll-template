@@ -1,11 +1,24 @@
 ---
-title: /user
+title: User Detail
 position: 3.1
 type: get
-description: Hiển thị thông tin cá nhân của user
+description: /user/detail_user/
 left_code_blocks:
   - code_block: |-
-      r = requests.get("http://portalurl/api/v1/user/detail_user/", token="YOUR_TOKEN_KEY")
+      $.ajax({
+        url: '/user/detail_user/',
+        headers: {
+          'Authorization':'Token $TOKEN',
+        },
+        method: 'GET',
+        success: function(data){
+          console.log(data);
+        }
+      });
+    title: jQuery
+    language: javascript
+  - code_block: |-
+      r = requests.get("/user/detail_user/", token="YOUR_TOKEN_KEY")
       print r.text
     title: Python
     language: python

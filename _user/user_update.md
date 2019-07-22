@@ -1,8 +1,8 @@
 ---
-title: /user
+title: User Update
 position: 3.2
 type: patch
-description: Cập nhật thông tin cá nhân của user
+description: /user/update_profile/
 parameters:
   - name: first_name
     content: Họ và tên đệm
@@ -16,6 +16,44 @@ parameters:
     content: Địa chỉ
   - name: company
     content: Tên công ty
+left_code_blocks:
+  - code_block: |-
+      $.ajax({
+        url: '/user/update_profile/',
+        headers: {
+            'Authorization':'Token $TOKEN',
+        },
+        data: {
+          'first_name': "string",
+          'last_name': "string",
+          'gender': 0,
+          'phone_number': "string",
+          'address': "string",
+          'company': "string"
+        }
+        method: 'POST',
+        dataType: 'json',
+        success: function(data){
+          console.log(data);
+        }
+      });
+    title: jQuery
+    language: javascript
+  - code_block: |-
+      url = /user/update_profile/
+      headers = {"Authorization":"Bearer " + "YOUR_TOKEN_KEY","Content-Type":"application/json"}
+      data = {
+        'first_name': "string",
+        'last_name': "string",
+        'gender': 0,
+        'phone_number': "string",
+        'address': "string",
+        'company': "string"
+      }
+      r = requests.post(url, headers = headers, data = data);
+      print r.text
+    title: Python
+    language: python
 right_code_blocks:
   - code_block: |-
         {

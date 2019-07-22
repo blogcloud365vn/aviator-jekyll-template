@@ -1,6 +1,6 @@
 ---
 title: /api/v1/auth/tokens
-position: 3.1
+position: 1.1
 type: post
 description: Create new token
 parameters:

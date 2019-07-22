@@ -1,6 +1,6 @@
 ---
 title: /server/{instance_id}/stop/
-position: 4.8
+position: 2.8
 type: post
 description: Tắt máy chủ ảo
 left_code_blocks:

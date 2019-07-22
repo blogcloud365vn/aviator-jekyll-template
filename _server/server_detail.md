@@ -1,6 +1,6 @@
 ---
 title: /api/v1/server/{instance_id}/
-position: 4.2
+position: 2.2
 type: get
 description: Hiển thị thông tin chi tiết của máy chủ ảo
 content_markdown: |-

@@ -1,6 +1,6 @@
 ---
 title: /server/{instance_id}/start/
-position: 4.7
+position: 2.7
 type: post
 description: Bật máy chủ ảo
 left_code_blocks:

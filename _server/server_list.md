@@ -1,6 +1,6 @@
 ---
 title: /api/v1/server/
-position: 4.1
+position: 2.1
 type: get
 description: Hiển thị thông tin các máy chủ ảo sở hữu
 content_markdown: |-

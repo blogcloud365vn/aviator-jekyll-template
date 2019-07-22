@@ -1,6 +1,6 @@
 ---
 title: /api/v1/auth/tokens
-position: 3.3
+position: 1.3
 type: delete
 description: Xóa token hiện tại
 content_markdown: |-

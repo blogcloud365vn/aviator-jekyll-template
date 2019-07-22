@@ -1,6 +1,6 @@
 ---
 title: /api/v1/server/{instance_id}/change_password/
-position: 4.3
+position: 2.3
 type: post
 description: Thay đổi mật khẩu đăng nhập
 parameters:

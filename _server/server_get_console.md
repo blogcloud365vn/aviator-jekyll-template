@@ -1,6 +1,6 @@
 ---
 title: /server/{instance_id}/console/
-position: 4.4
+position: 2.4
 type: get
 description: Lấy thông tin đường dẫn console
 content_markdown: |-

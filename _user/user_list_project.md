@@ -1,6 +1,6 @@
 ---
 title: /user
-position: 5.4
+position: 3.4
 type: get
 description: Hiển thị thông tin cá nhân của user
 left_code_blocks:

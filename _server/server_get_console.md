@@ -1,5 +1,5 @@
 ---
-title: /server
+title: /server/{instance_id}/console/
 position: 4.4
 type: get
 description: Lấy thông tin đường dẫn console

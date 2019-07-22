@@ -8,8 +8,7 @@ parameters:
     content: Email sử dụng để đăng nhập portal
   - name: password
     content: Password sử dụng để đăng nhập portal
-  - name: expired
-    content: Thời gian tồn tại của token (tính bằng giờ)
+
 left_code_blocks:
   - code_block: |-
       $.post("/api/v1/auth/tokens", {
@@ -31,9 +30,7 @@ right_code_blocks:
   - code_block: |-
         {
           "email": "string",
-          "password": "string",
-          "expired": 0,
-          "project_id": "string"
+          "password": "string"
         }
     title: Request
     language: json

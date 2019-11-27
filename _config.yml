@@ -24,7 +24,7 @@ collections:
     title: USER
     position: 3
   token:
-    title: TOKEN
+    title: TOKEN TOKEN
     position: 4
 plugins:
   - jekyll-sitemap

@@ -23,6 +23,9 @@ collections:
   user:
     title: USER
     position: 3
+  token:
+    title: TOKEN
+    position: 4
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

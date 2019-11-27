@@ -26,6 +26,9 @@ collections:
   token:
     title: TOKEN
     position: 4
+  # token:
+  #   title: TOKEN
+  #   position: 4
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
